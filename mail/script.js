@@ -8,13 +8,19 @@ console.log (email);
 
 // controlla che sia nella lista di chi può accedere,
 var messaggio = "";
+var utenteValido;
 
 for (var i = 0; i < listaemail.length; i++) {
    console.log (listaemail[i]);
-
 // stampa un messaggio appropriato sull’esito del controllo.
-   if (email == listaemail[i] ) {
-     alert("UTENTE AUTORIZZATO");
-     console.log (messaggio);
+ if (email == listaemail[i] ) {
+   utenteValido = email;
 }
+}
+
+if (utenteValido == email) {
+  alert("UTENTE AUTORIZZATO");
+}
+else{
+  alert("UTENTE NON AUTORIZZATO");
 }
