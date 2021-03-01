@@ -14,7 +14,7 @@ for (var i = 0; i < listaemail.length; i++) {
 
 // stampa un messaggio appropriato sull’esito del controllo.
    if (email == listaemail[i] ) {
-     messaggio ="UTENTE AUTORIZZATO";
+     alert("UTENTE AUTORIZZATO");
      console.log (messaggio);
-   }
+}
 }
